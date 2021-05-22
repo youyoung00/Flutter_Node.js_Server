@@ -23,39 +23,62 @@ app.get('/check/:date', (req,res) => { // 7정적 / 동적 분기, 쿼리스트�
 });
 
 var datas = [
-   
     {
-      "title" : "댄스",
-      "datas" : [
-          {"title" : "댄스노래1", 
-          "name" : "댄스가수1",
-          "des" : "댄스가사1", 
-          "image": "https://cdn.pixabay.com/photo/2020/09/20/14/08/woman-5587219__480.jpg"
+      "category":"댄스",
+      "categoryimg":"https://images.unsplash.com/photo-1620414573733-2e3c7668cc63?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
+      "datas":
+      [
+        {
+         "title":"운전만해 (We Ride)",
+          "artist":"브레이브걸스(Brave Girls)",
+          "jacket":"https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z2lybHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
+      
         },
         {
-          "title" : "댄스노래2",
-          "name" : "댄스가수2",
-          "des" : "댄스가사2",
-          "image": "https://cdn.pixabay.com/photo/2021/04/26/10/48/lake-6208614__480.jpg"
+          "title":"꼬리 (TAIL)",
+          "artist":"선미",
+          "jacket":"https://images.unsplash.com/photo-1620416264544-5866b5c5c931?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0N3x8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
+         
         }
       ]
     },
     {
-      "title" : "발라드",
-      "datas" : [
+      "category":"발라드",
+      "categoryimg":"https://images.unsplash.com/photo-1619644918254-fa5d69bd17be?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
+      "datas":
+      [
         {
-          "title" : "발라드노래1",
-          "name" : "발라드가수1",
-          "des" : "발라드가사1",
-          "image": "https://cdn.pixabay.com/photo/2020/01/21/16/26/yorkshire-terrier-4783327__480.jpg"
+          "title":"살다가",
+          "artist":"SG워너비",
+          "jacket":"https://images.unsplash.com/photo-1526218626217-dc65a29bb444?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2luZ2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+         
         },
         {
-          "title" : "발라드노래2",
-          "name" : "발라드가수2",
-          "des" : "댄스가사2",
-          "image": "https://cdn.pixabay.com/photo/2020/01/21/16/26/yorkshire-terrier-4783327__480.jpg"
+          "title":"아이와 나의 바다",
+          "artist":"아이유(IU)",
+          "jacket":"https://images.unsplash.com/photo-1593697821252-0c9137d9fc45?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2luZ2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+       
         }
       ]
+    },
+    {
+      "category":"힙합",
+      "categoryimg":"https://images.unsplash.com/photo-1548354797-6b1c0d36b3af?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGhpcCUyMGhvcHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
+      "datas":
+      [
+        {
+          "title":"마.피.아. In the morning",
+          "artist":"ITZY (있지)",
+          "jacket":"https://images.unsplash.com/photo-1612976023590-be5b6a14051d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fHNpbmdlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
+      
+        },
+        {
+          "title":"굿모닝 (Feat. 원슈타인)",
+          "artist":"버벌진트(Verbal Jint),한해",
+          "jacket":"https://images.unsplash.com/photo-1600395010878-e554c285589f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGhpcCUyMGhvcHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60",
+         
+        }
+      ]    
     }
   ];
 
